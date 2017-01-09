@@ -1,0 +1,241 @@
+﻿#pageTitle{
+    text-align:center;
+    padding-left:3em;
+    padding-right:3em;
+}
+
+#pageTitle h1 {
+	color: red;
+	font-family: "raleway-heavy", sans-serif;
+	font-size: 5.4rem;
+	line-height: 1.334;
+	margin-left: auto;
+	margin-right: auto;
+    text-transform: initial;
+}
+    
+#pageTitle h1 span{
+    color: black;
+}
+
+#feedsContent{
+    padding-top:240px;
+    padding-bottom: 10px;
+}
+
+.tab {
+    display: none;
+    overflow: auto;
+}
+
+.tab.active {
+    display: block;
+}
+
+.column1 {
+    width:33.3%;
+    height:100%;
+    float:left;
+    padding-left: 2em;
+}
+.column2 {
+    width:33.3%;
+    height:100%;
+    float:left;
+}
+.column3 {
+    width:33.3%;
+    height:100%;
+    float:left;
+    padding-right: 2em;
+}
+
+.feedImage {
+    position: relative;
+}
+.feedImage img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: solid;
+    border-color:black;
+}
+
+.feedImage :hover img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+.feedImage-text {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding: 0.75em 1em;
+    font-weight: 700;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.7);
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+.feedImage:hover .feedImage-text {
+    opacity: 1;
+}
+
+#footer {
+    background-color:red;
+    text-align:center
+}
+#footer p {
+	font-size: 1.5rem;
+	line-height: 2.7rem;
+	font-family: "raleway-medium", sans-serif;
+	color: white;
+    background-color:red;
+    align-content:center;
+}
+
+@media only screen and (max-width:554px) {
+	#pageTitle h1 {
+		font-size: 5.0rem;
+	}
+}
+
+@media only screen and (max-width:520px) {
+	#pageTitle h1 {
+		font-size: 4.2rem;
+	}
+}
+
+@media only screen and (max-width:460px) {
+	#pageTitle h1 {
+		font-size: 3.8rem;
+	}
+}
+
+@media only screen and (max-width:430px) {
+	#pageTitle h1 {
+		font-size: 3.6rem;
+	}
+}
+
+@media only screen and (max-width:420px) {
+	#pageTitle h1 {
+		font-size: 3.4rem;
+	}
+}
+
+@media only screen and (max-width:380px) {
+	#pageTitle h1 {
+		font-size: 3.2rem;
+	}
+}
+
+@media only screen and (max-width:370px) {
+	#pageTitle h1 {
+		font-size: 3.0rem;
+	}
+}
+
+@media only screen and (max-width:350px) {
+	#pageTitle h1 {
+		font-size: 2.8rem;
+	}
+}
+
+@media only screen and (max-width:340px) {
+	#pageTitle h1 {
+		font-size: 2.4rem;
+	}
+}
+
+@media only screen and (max-width:310px) {
+	#pageTitle h1 {
+		font-size: 2.2rem;
+	}
+}
+
+@media only screen and (max-width:564px) {
+	#feedsContent
+    {
+		padding-top: 270px;
+	}
+}
+
+@media only screen and (max-width:768px) {
+    .nav li{
+        float: left;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .nav li{
+        float: left;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:940px) {
+    .column1 {
+        width:50%;
+        height:100%;
+        float:left;
+        padding-left: 2em;
+    }
+
+    .column2 {
+        width:50%;
+        height:100%;
+        float:left;
+        padding-right: 2em;
+    }
+
+    .column3 {
+        width:100%;
+        height:100%;
+        float:left;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .column3 .feedImage img {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .column1 {
+        width:100%;
+        height:100%;
+        float:left;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .column2 {
+        width:100%;
+        height:100%;
+        float:left;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .column3 {
+        width:100%;
+        height:100%;
+        float:left;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .column3 .feedImage img {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,6 @@
+c:\users\altran\documents\visual studio 2013\Projects\FARGo\FARGo\bin\FARGo.dll.config
+c:\users\altran\documents\visual studio 2013\Projects\FARGo\FARGo\bin\FARGo.dll
+c:\users\altran\documents\visual studio 2013\Projects\FARGo\FARGo\bin\FARGo.pdb
+c:\users\altran\documents\visual studio 2013\Projects\FARGo\FARGo\obj\Debug\FARGo.csprojResolveAssemblyReference.cache
+c:\users\altran\documents\visual studio 2013\Projects\FARGo\FARGo\obj\Debug\FARGo.dll
+c:\users\altran\documents\visual studio 2013\Projects\FARGo\FARGo\obj\Debug\FARGo.pdb

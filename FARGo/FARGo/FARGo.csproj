@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{199312B9-7117-43A8-B345-C2724DF219A6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FARGo</RootNamespace>
+    <AssemblyName>FARGo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\FARGo.dll" />
+    <Content Include="bin\FARGo.pdb" />
+    <Content Include="css\base.css" />
+    <Content Include="css\FargoHomePage.css" />
+    <Content Include="css\FeedsPage_Fandango.css" />
+    <Content Include="css\FeedsPage_IndieWire.css" />
+    <Content Include="css\FeedsPage_LAT.css" />
+    <Content Include="css\FeedsPage_MovieWeb.css" />
+    <Content Include="css\FeedsPage_NYT.css" />
+    <Content Include="css\FeedsPage_TheWrap.css" />
+    <Content Include="css\FeedsPage_THR.css" />
+    <Content Include="css\fonts.css" />
+    <Content Include="css\main.css" />
+    <Content Include="FargoHomePage.html" />
+    <Content Include="FeedsPage_Fandango.html" />
+    <Content Include="FeedsPage_IndieWire.html" />
+    <Content Include="FeedsPage_LAT.html" />
+    <Content Include="FeedsPage_MovieWeb.html" />
+    <Content Include="FeedsPage_NYT.html" />
+    <Content Include="FeedsPage_TheWrap.html" />
+    <Content Include="FeedsPage_THR.html" />
+    <Content Include="Feeds\Awards.jpg" />
+    <Content Include="Feeds\Cinema.png" />
+    <Content Include="Feeds\EW_Logo.png" />
+    <Content Include="Feeds\Fandango_Logo.jpg" />
+    <Content Include="Feeds\FARGo_Logo.jpg" />
+    <Content Include="Feeds\FARGo_MicroLogo.jpg" />
+    <Content Include="Feeds\Festivals.png" />
+    <Content Include="Feeds\Home.png" />
+    <Content Include="Feeds\IndieWire_Logo.jpg" />
+    <Content Include="Feeds\LATimes_Logo.png" />
+    <Content Include="Feeds\Logo.jpg" />
+    <Content Include="Feeds\LogoBW.jpg" />
+    <Content Include="Feeds\LogoFilms.jpg" />
+    <Content Include="Feeds\Logos.png" />
+    <Content Include="Feeds\MovieWeb_Logo.png" />
+    <Content Include="Feeds\NewYorkTimes_Logo.png" />
+    <Content Include="Feeds\NYTimes_Logo.png" />
+    <Content Include="Feeds\Reviews.png" />
+    <Content Include="Feeds\TheWrap_Logo.png" />
+    <Content Include="Feeds\THR_Logo.jpeg" />
+    <Content Include="Feeds\Variety_Logo.jpg" />
+    <Content Include="Feeds\Wrap_Logo.JPG" />
+    <Content Include="fonts\merriweather\merriweather-black-webfont.svg" />
+    <Content Include="fonts\merriweather\merriweather-bold-webfont.svg" />
+    <Content Include="fonts\merriweather\merriweather-bolditalic-webfont.svg" />
+    <Content Include="fonts\merriweather\merriweather-heavyitalic-webfont.svg" />
+    <Content Include="fonts\merriweather\merriweather-italic-webfont.svg" />
+    <Content Include="fonts\merriweather\merriweather-light-webfont.svg" />
+    <Content Include="fonts\merriweather\merriweather-lightitalic-webfont.svg" />
+    <Content Include="fonts\merriweather\merriweather-regular-webfont.svg" />
+    <Content Include="fonts\montserrat\montserrat-bold-webfont.svg" />
+    <Content Include="fonts\montserrat\montserrat-regular-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-bold-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-extrabold-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-extralight-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-heavy-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-light-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-medium-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-regular-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-semibold-webfont.svg" />
+    <Content Include="fonts\raleway\raleway-thin-webfont.svg" />
+    <Content Include="js\Fandango.js" />
+    <Content Include="js\IndieWire.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="FeedServer.ashx" />
+    <None Include="js\jquery-3.1.1.intellisense.js" />
+    <Content Include="js\jquery-3.1.1.js" />
+    <Content Include="js\jquery-3.1.1.min.js" />
+    <Content Include="js\jquery-3.1.1.slim.js" />
+    <Content Include="js\jquery-3.1.1.slim.min.js" />
+    <Content Include="js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="js\LAT.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\MovieWeb.js" />
+    <Content Include="js\NYT.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\TheWrap.js" />
+    <Content Include="js\THR.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="fonts\merriweather\merriweather-black-webfont.eot" />
+    <Content Include="fonts\merriweather\merriweather-black-webfont.ttf" />
+    <Content Include="fonts\merriweather\merriweather-black-webfont.woff" />
+    <Content Include="fonts\merriweather\merriweather-bold-webfont.eot" />
+    <Content Include="fonts\merriweather\merriweather-bold-webfont.ttf" />
+    <Content Include="fonts\merriweather\merriweather-bold-webfont.woff" />
+    <Content Include="fonts\merriweather\merriweather-bolditalic-webfont.eot" />
+    <Content Include="fonts\merriweather\merriweather-bolditalic-webfont.ttf" />
+    <Content Include="fonts\merriweather\merriweather-bolditalic-webfont.woff" />
+    <Content Include="fonts\merriweather\merriweather-heavyitalic-webfont.eot" />
+    <Content Include="fonts\merriweather\merriweather-heavyitalic-webfont.ttf" />
+    <Content Include="fonts\merriweather\merriweather-heavyitalic-webfont.woff" />
+    <Content Include="fonts\merriweather\merriweather-italic-webfont.eot" />
+    <Content Include="fonts\merriweather\merriweather-italic-webfont.ttf" />
+    <Content Include="fonts\merriweather\merriweather-italic-webfont.woff" />
+    <Content Include="fonts\merriweather\merriweather-light-webfont.eot" />
+    <Content Include="fonts\merriweather\merriweather-light-webfont.ttf" />
+    <Content Include="fonts\merriweather\merriweather-light-webfont.woff" />
+    <Content Include="fonts\merriweather\merriweather-lightitalic-webfont.eot" />
+    <Content Include="fonts\merriweather\merriweather-lightitalic-webfont.ttf" />
+    <Content Include="fonts\merriweather\merriweather-lightitalic-webfont.woff" />
+    <Content Include="fonts\merriweather\merriweather-regular-webfont.eot" />
+    <Content Include="fonts\merriweather\merriweather-regular-webfont.ttf" />
+    <Content Include="fonts\merriweather\merriweather-regular-webfont.woff" />
+    <Content Include="fonts\montserrat\montserrat-bold-webfont.eot" />
+    <Content Include="fonts\montserrat\montserrat-bold-webfont.ttf" />
+    <Content Include="fonts\montserrat\montserrat-bold-webfont.woff" />
+    <Content Include="fonts\montserrat\montserrat-regular-webfont.eot" />
+    <Content Include="fonts\montserrat\montserrat-regular-webfont.ttf" />
+    <Content Include="fonts\montserrat\montserrat-regular-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-bold-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-bold-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-bold-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-extrabold-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-extrabold-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-extrabold-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-extralight-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-extralight-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-extralight-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-heavy-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-heavy-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-heavy-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-light-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-light-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-light-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-medium-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-medium-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-medium-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-regular-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-regular-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-regular-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-semibold-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-semibold-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-semibold-webfont.woff" />
+    <Content Include="fonts\raleway\raleway-thin-webfont.eot" />
+    <Content Include="fonts\raleway\raleway-thin-webfont.ttf" />
+    <Content Include="fonts\raleway\raleway-thin-webfont.woff" />
+    <Content Include="js\jquery-3.1.1.min.map" />
+    <Content Include="js\jquery-3.1.1.slim.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50116</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50116/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

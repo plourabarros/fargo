@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FARGo - Fandango News</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/FeedsPage_Fandango.css" />
+
+    <script src="js/Fandango.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            $("#topTenFilmSection") .bind("load", loadFandangoFeed('rss/top10boxoffice.rss'));
+            $("#newMoviesSection")  .bind("load", loadFandangoFeed('rss/newmovies.rss'));
+            $("#shMoviesSection")   .bind("load", loadFandangoFeed('movies/superhero/rss/movie-list.rss'));
+            $("#indieMoviesSection").bind("load", loadFandangoFeed('movies/indie/rss/movie-list.rss'));
+            $("#movieNewsSection")  .bind("load", loadFandangoFeed('rss/movie-news.rss'));
+            $("#indieNewsSection")  .bind("load", loadFandangoFeed('movies/indie/rss/movie-news.rss'));
+        }
+    </script>
+    <script src="js/modernizr.js"></script>
+</head>
+
+<body style="margin: 0">
+    <div id="preloader"><div id="loader"></div></div>
+    <nav class="navbar navbar-default navbar-fixed-top" style="overflow-y:auto; overflow-x:hidden">
+        <div class="container-fluid">
+            <div class="col-twelve" style="text-align: center; align-content: center; vertical-align: middle;">
+                <a href="FargoHomePage.html" title="Return to FARGo's home page">
+                    <img src="Feeds/Home.png" alt="Home" height="50" width="50" style="padding-top: 10px;" /></a>
+                <div id="pageTitle">
+                    <h1>Fandango <span>Feed</span></h1>
+                </div>
+            </div>
+        </div>
+        <ul class="nav navbar-nav" style="padding-left:2em">
+            <li class="active"><a data-toggle="tab" href="#topTenFilmSection">Top10 Films</a></li>
+            <li><a data-toggle="tab" href="#newMoviesSection">New Fims</a></li>
+            <li><a data-toggle="tab" href="#shMoviesSection">SuperHero Films</a></li>
+            <li><a data-toggle="tab" href="#indieMoviesSection">Indie Films</a></li>
+            <li><a data-toggle="tab" href="#movieNewsSection">Films News</a></li>
+            <li><a data-toggle="tab" href="#indieNewsSection">Indie Films News</a></li>
+        </ul>
+    </nav>
+    <div id="feedsContent">
+        <div id="topTenFilmSection" class="tab fade in active">
+            <div class="column1"></div>
+            <div class="column2"></div>
+            <div class="column3"></div>
+        </div>
+        <div id="newMoviesSection" class="tab fade">
+            <div class="column1"></div>
+            <div class="column2"></div>
+            <div class="column3"></div>
+        </div>
+        <div id="shMoviesSection" class="tab fade">
+            <div class="column1"></div>
+            <div class="column2"></div>
+            <div class="column3"></div>
+        </div>
+        <div id="indieMoviesSection" class="tab fade">
+            <div class="column1"></div>
+            <div class="column2"></div>
+            <div class="column3"></div>
+        </div>
+        <div id="movieNewsSection" class="tab fade">
+            <div class="column1"></div>
+            <div class="column2"></div>
+            <div class="column3"></div>
+        </div>
+        <div id="indieNewsSection" class="tab fade">
+            <div class="column1"></div>
+            <div class="column2"></div>
+            <div class="column3"></div>
+        </div>
+    </div>
+    <section id="footer"></section>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
